@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Omnifood is an AI-powered fodd subscription that will make you eat healthy again, 365 days per year. It's tailored to your personal tastes and nutritional needs."
+    />
+
+    <!-- always include this line of code -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="/Omnifood/img/favicon-512.png" />
+
+    <link rel="manifest" href="/Omnifood/manifest.webmanifest" />
+
+    <link rel="apple-touch-icon" href="/Omnifood/img/apple-touch-icon.png" />
+
+    <link rel="stylesheet" href="" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Omnifood-Feedback</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        font-size: 62.5%;
+        overflow-x: hidden;
+
+        /* Does NOT work on Safari */
+        /* scroll-behavior: smooth; */
+      }
+      body {
+        font-family: "Rubik", sans-serif;
+        font-weight: 400;
+        line-height: 1;
+        color: #555;
+
+        /* only works if there is nothing absolutely positioned  in relation to body*/
+        overflow-x: hidden;
+      }
+
+      /* ****************** */
+      /* General Components (Reusable)*/
+      /* ****************** */
+      .container {
+        /* 1140px */
+        max-width: 120rem;
+        margin: 0 auto;
+        padding: 0 3.2rem;
+      }
+
+      .section-cta {
+        padding: 4.8rem 0 12.8rem;
+      }
+
+      .cta {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        /* background-color: #e67e22; */
+        box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+        border-radius: 11px;
+
+        background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+        overflow: hidden;
+      }
+
+      .cta-text-box {
+        color: #45260a;
+        padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+      }
+
+      .cta .heading-secondary {
+        /* color: #45260a; */
+        color: inherit;
+        margin-bottom: 3.2rem;
+      }
+
+      .cta-text {
+        font-size: 1.8rem;
+        line-height: 1.8;
+        margin-bottom: 4.8rem;
+      }
+
+      .cta-image-box {
+        background-image: linear-gradient(
+            to right bottom,
+            rgba(235, 151, 78, 0.35),
+            rgb(230, 126, 34, 0.35)
+          ),
+          url("../img/eating.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+
+      .cta-form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 3.2rem;
+        row-gap: 2.4rem;
+      }
+
+      .cta-form label {
+        display: block;
+        font-size: 1.6rem;
+        font-weight: 500;
+        margin-bottom: 1.2rem;
+      }
+      .cta-form input,
+      .cta-form select,
+      .cta-form textarea {
+        width: 100%;
+        padding: 1.2rem;
+        font-size: 1.8rem;
+        font-family: inherit;
+        color: inherit;
+        border: none;
+        background-color: #fdf2e9;
+        border-radius: 9px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+      }
+
+      .cta-form input::placeholder {
+        color: #aaa;
+      }
+
+      .cta *:focus {
+        outline: none;
+        /* outline: 0.8rem solid rgba(253, 242, 233, 0.5); */
+        box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+      }
+
+      .btn,
+      .btn:link,
+      .btn:visited {
+        display: inline-block;
+
+        text-decoration: none;
+        font-size: 2rem;
+        font-weight: 600;
+        padding: 1.6rem 3.2rem;
+        border-radius: 9px;
+
+        /* put transition on original state */
+        transition: all 0.3s;
+
+        /* only for .btn */
+        border: none;
+        cursor: pointer;
+        font-family: inherit;
+      }
+      .btn--form {
+        background-color: #45260a;
+        color: #fdf2e9;
+        align-self: end;
+        padding: 1.2rem;
+        /* background-color: inherit; */
+      }
+
+      .btn--form:hover {
+        background-color: #fff;
+        color: #555;
+      }
+
+      #feedback {
+        border: 2px solid orange;
+        font-size: 1.5rem;
+        color: #555;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="section-cta" id="cta">
+      <div class="container">
+        <div class="cta">
+          <div class="cta-text-box">
+            <h2 class="heading-secondary">Get you first meal for free!</h2>
+            <p class="cta-text">
+              Healthy, tasty and hassle-free meals are waiting for you. Start
+              eating well today. You can cancel or pause anytime. And the first
+              meal is on us!
+            </p>
+
+            <form class="cta-form" name="Feedback" netlify>
+              <div>
+                <label for="full-name">Full Name</label>
+                <input
+                  id="full-name"
+                  type="text"
+                  placeholder="John Smith"
+                  name="full-name"
+                  required
+                />
+              </div>
+
+              <div>
+                <label for="email">Email address</label>
+                <input
+                  id="email"
+                  type="email"
+                  placeholder="me@example.com"
+                  name="email"
+                  required
+                />
+              </div>
+
+              <div>
+                <label for="select-where">Feedback</label>
+                <!-- <select name="select-where" id="select-where" required>
+                  <option value="">Please choose one option:</option>
+                  <option value="friends">Friends and family</option>
+                  <option value="youtube">YouTube video</option>
+                  <option value="podcast">Podcast</option>
+                  <option value="ad">facebook ad</option>
+                  <option value="others">Others</option>
+                </select> -->
+                <textarea
+                  name="feedback"
+                  id="feedback"
+                  cols="50"
+                  rows="10"
+                  required
+                  placeholder="Feedback.."
+                ></textarea>
+              </div>
+
+              <button class="btn btn--form">Submit</button>
+              <!-- <input type="checkbox" />
+              <input type="number" /> -->
+            </form>
+          </div>
+          <div
+            class="cta-image-box"
+            role="img"
+            aria-label="Women enjoying food"
+          ></div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

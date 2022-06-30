@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Omnifood is an AI-powered fodd subscription that will make you eat healthy again, 365 days per year. It's tailored to your personal tastes and nutritional needs."
+    />
+
+    <!-- always include this line of code -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="img/favicon.png" />
+
+    <link rel="manifest" href="manifest.webmanifest" />
+
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+
+    <link rel="stylesheet" href="" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Omnifood - Your Plans</title>
+
+    <link rel="stylesheet" href="/Omnifood/css/yourplan.css" />
+  </head>
+
+  <body>
+    <main id="main">
+      <div class="header">
+        <h1>Welcome back</h1>
+        <!-- <h3 class="planinfo">your plan expires in 10 days</h3> -->
+        <form name="name" class="name" netlify>
+          <input
+            type="text"
+            class="input--name"
+            placeholder="username"
+            required
+          />
+        </form>
+      </div>
+      <div class="headings">
+        <div class="Days">Days</div>
+        <div class="left">Meals Left</div>
+        <div class="item">Items</div>
+        <div class="ingri">Ingredients</div>
+        <div class="btn">Status</div>
+      </div>
+      <div class="weekly-plans">
+        <div class="mon week day--1">
+          <div class="Days">Monday</div>
+          <div class="left left--Mon">0</div>
+          <div class="item">Lorem</div>
+          <div class="ingri ingri--1">ingredients</div>
+          <!-- <div class="btn">Order</div> -->
+          <!-- <input type="submit" form="myform" class="btn" value="Order" /> -->
+          <input
+            type="submit"
+            form="myform1"
+            class="btn orderBtn"
+            value="Order"
+          />
+          <div class="hidden hidden--1 hide">
+            <form class="change" id="myform1" name="Monday" data-netlify="true">
+              <input type="hidden" name="Name" value="name" />
+              <input type="hidden" name="Address" value="address" />
+
+              <input type="hidden" name="Mail" value="@gmail.com" />
+              <input type="hidden" name="Phno" value="1" />
+
+              <input type="hidden" name="Item" value="item" />
+              <input type="checkbox" name="1" id="ingri1" value="1" checked />
+              <label for="ingri1">1</label>
+
+              <input type="checkbox" name="2" id="ingri2" value="2" checked />
+              <label for="ingri2">2</label>
+
+              <input type="checkbox" name="3" id="ingri3" value="3" checked />
+              <label for="ingri3">3</label>
+
+              <input type="checkbox" name="4" id="ingri4" value="4" checked />
+              <label for="ingri4">4</label>
+
+              <input type="checkbox" name="5" id="ingri5" value="5" checked />
+              <label for="ingri5">5</label>
+
+              <input type="checkbox" name="6" id="ingri6" value="6" checked />
+              <label for="ingri6">6</label>
+
+              <input type="checkbox" name="7" id="ingri7" value="7" checked />
+              <label for="ingri7">7</label>
+
+              <input type="checkbox" name="8" id="ingri8" value="8" checked />
+              <label for="ingri8">8</label>
+            </form>
+          </div>
+        </div>
+
+        <div class="tue week day--2">
+          <div class="Days">Tuesday</div>
+          <div class="left left--Tue">0</div>
+          <div class="item">Lorem</div>
+          <div class="ingri ingri--2">ingredients</div>
+          <input
+            type="submit"
+            form="myform2"
+            class="btn orderBtn"
+            value="Order"
+          />
+          <div class="hidden hidden--2 hide">
+            <form
+              class="change"
+              id="myform2"
+              name="Tuesday"
+              data-netlify="true"
+            >
+              <input type="hidden" name="Name" value="name" />
+              <input type="hidden" name="Address" value="address" />
+
+              <input type="hidden" name="Mail" value="@gmail.com" />
+              <input type="hidden" name="Phno" value="1" />
+
+              <input type="hidden" name="Item" value="item" />
+              <input type="checkbox" name="1" id="ingri1" value="1" checked />
+              <label for="ingri1">1</label>
+
+              <input type="checkbox" name="2" id="ingri2" value="2" checked />
+              <label for="ingri2">2</label>
+
+              <input type="checkbox" name="3" id="ingri3" value="3" checked />
+              <label for="ingri3">3</label>
+
+              <input type="checkbox" name="4" id="ingri4" value="4" checked />
+              <label for="ingri4">4</label>
+
+              <input type="checkbox" name="5" id="ingri5" value="5" checked />
+              <label for="ingri5">5</label>
+
+              <input type="checkbox" name="6" id="ingri6" value="6" checked />
+              <label for="ingri6">6</label>
+
+              <input type="checkbox" name="7" id="ingri7" value="7" checked />
+              <label for="ingri7">7</label>
+
+              <input type="checkbox" name="8" id="ingri8" value="8" checked />
+              <label for="ingri8">8</label>
+            </form>
+          </div>
+        </div>
+
+        <div class="wed week day--3">
+          <div class="Days">Wednesday</div>
+          <div class="left left--Wed">0</div>
+          <div class="item">Lorem</div>
+          <div class="ingri ingri--3">ingredients</div>
+          <input
+            type="submit"
+            form="myform3"
+            class="btn orderBtn"
+            value="Order"
+          />
+          <div class="hidden hidden--3 hide">
+            <form
+              class="change"
+              id="myform3"
+              name="Wednesday"
+              data-netlify="true"
+            >
+              <input type="hidden" name="Name" value="name" />
+              <input type="hidden" name="Address" value="address" />
+
+              <input type="hidden" name="Mail" value="@gmail.com" />
+              <input type="hidden" name="Phno" value="1" />
+
+              <input type="hidden" name="Item" value="item" />
+              <input type="checkbox" name="1" id="ingri1" value="1" checked />
+              <label for="ingri1">1</label>
+
+              <input type="checkbox" name="2" id="ingri2" value="2" checked />
+              <label for="ingri2">2</label>
+
+              <input type="checkbox" name="3" id="ingri3" value="3" checked />
+              <label for="ingri3">3</label>
+
+              <input type="checkbox" name="4" id="ingri4" value="4" checked />
+              <label for="ingri4">4</label>
+
+              <input type="checkbox" name="5" id="ingri5" value="5" checked />
+              <label for="ingri5">5</label>
+
+              <input type="checkbox" name="6" id="ingri6" value="6" checked />
+              <label for="ingri6">6</label>
+
+              <input type="checkbox" name="7" id="ingri7" value="7" checked />
+              <label for="ingri7">7</label>
+
+              <input type="checkbox" name="8" id="ingri8" value="8" checked />
+              <label for="ingri8">8</label>
+            </form>
+          </div>
+        </div>
+
+        <div class="thu week day--4">
+          <div class="Days">Thursday</div>
+          <div class="left left--Thu">0</div>
+          <div class="item">Lorem</div>
+          <div class="ingri ingri--4">ingredients</div>
+          <input
+            type="submit"
+            form="myform4"
+            class="btn orderBtn"
+            value="Order"
+          />
+          <div class="hidden hidden--4 hide">
+            <form
+              class="change"
+              id="myform4"
+              name="Thursday"
+              data-netlify="true"
+            >
+              <input type="hidden" name="Name" value="name" />
+              <input type="hidden" name="Address" value="address" />
+
+              <input type="hidden" name="Mail" value="@gmail.com" />
+              <input type="hidden" name="Phno" value="1" />
+
+              <input type="hidden" name="Item" value="" />
+              <input type="checkbox" name="1" id="ingri1" value="1" checked />
+              <label for="ingri1">1</label>
+
+              <input type="checkbox" name="2" id="ingri2" value="2" checked />
+              <label for="ingri2">2</label>
+
+              <input type="checkbox" name="3" id="ingri3" value="3" checked />
+              <label for="ingri3">3</label>
+
+              <input type="checkbox" name="4" id="ingri4" value="4" checked />
+              <label for="ingri4">4</label>
+
+              <input type="checkbox" name="5" id="ingri5" value="5" checked />
+              <label for="ingri5">5</label>
+
+              <input type="checkbox" name="6" id="ingri6" value="6" checked />
+              <label for="ingri6">6</label>
+
+              <input type="checkbox" name="7" id="ingri7" value="7" checked />
+              <label for="ingri7">7</label>
+
+              <input type="checkbox" name="8" id="ingri8" value="8" checked />
+              <label for="ingri8">8</label>
+            </form>
+          </div>
+        </div>
+
+        <div class="fri week day--5">
+          <div class="Days">Friday</div>
+          <div class="left left--Fri">0</div>
+          <div class="item">Lorem</div>
+          <div class="ingri ingri--5">ingredients</div>
+          <input
+            type="submit"
+            form="myform5"
+            class="btn orderBtn"
+            value="Order"
+          />
+          <div class="hidden hidden--5 hide">
+            <form class="change" id="myform5" name="Friday" data-netlify="true">
+              <input type="hidden" name="Name" value="name" />
+              <input type="hidden" name="Address" value="address" />
+
+              <input type="hidden" name="Mail" value="@gmail.com" />
+              <input type="hidden" name="Phno" value="1" />
+
+              <input type="hidden" name="Item" value="item" />
+              <input type="checkbox" name="1" id="ingri1" value="1" checked />
+              <label for="ingri1">1</label>
+
+              <input type="checkbox" name="2" id="ingri2" value="2" checked />
+              <label for="ingri2">2</label>
+
+              <input type="checkbox" name="3" id="ingri3" value="3" checked />
+              <label for="ingri3">3</label>
+
+              <input type="checkbox" name="4" id="ingri4" value="4" checked />
+              <label for="ingri4">4</label>
+
+              <input type="checkbox" name="5" id="ingri5" value="5" checked />
+              <label for="ingri5">5</label>
+
+              <input type="checkbox" name="6" id="ingri6" value="6" checked />
+              <label for="ingri6">6</label>
+
+              <input type="checkbox" name="7" id="ingri7" value="7" checked />
+              <label for="ingri7">7</label>
+
+              <input type="checkbox" name="8" id="ingri8" value="8" checked />
+              <label for="ingri8">8</label>
+            </form>
+          </div>
+        </div>
+
+        <div class="sat week day--6">
+          <div class="Days">Saturday</div>
+          <div class="left left--Sat">0</div>
+          <div class="item">Lorem</div>
+          <div class="ingri ingri--6">ingredients</div>
+          <input
+            type="submit"
+            form="myform6"
+            class="btn orderBtn"
+            value="Order"
+          />
+          <div class="hidden hidden--6 hide">
+            <form
+              class="change"
+              id="myform6"
+              name="Saturday"
+              data-netlify="true"
+            >
+              <input type="hidden" name="Name" value="name" />
+              <input type="hidden" name="Address" value="address" />
+
+              <input type="hidden" name="Mail" value="@gmail.com" />
+              <input type="hidden" name="Phno" value="1" />
+
+              <input type="hidden" name="Item" value="item" />
+              <input type="checkbox" name="1" id="ingri1" value="1" checked />
+              <label for="ingri1">1</label>
+
+              <input type="checkbox" name="2" id="ingri2" value="2" checked />
+              <label for="ingri2">2</label>
+
+              <input type="checkbox" name="3" id="ingri3" value="3" checked />
+              <label for="ingri3">3</label>
+
+              <input type="checkbox" name="4" id="ingri4" value="4" checked />
+              <label for="ingri4">4</label>
+
+              <input type="checkbox" name="5" id="ingri5" value="5" checked />
+              <label for="ingri5">5</label>
+
+              <input type="checkbox" name="6" id="ingri6" value="6" checked />
+              <label for="ingri6">6</label>
+
+              <input type="checkbox" name="7" id="ingri7" value="7" checked />
+              <label for="ingri7">7</label>
+
+              <input type="checkbox" name="8" id="ingri8" value="8" checked />
+              <label for="ingri8">8</label>
+            </form>
+          </div>
+        </div>
+
+        <div class="sun week day--7">
+          <div class="Days">Sunday</div>
+          <div class="left left--Sun">0</div>
+          <div class="item">Lorem</div>
+          <div class="ingri ingri--7">ingredients</div>
+          <input
+            type="submit"
+            form="myform7"
+            class="btn orderBtn"
+            value="Order"
+          />
+          <div class="hidden hidden--7 hide">
+            <form class="change" id="myform7" name="Sunday" data-netlify="true">
+              <input type="hidden" name="Name" value="name" />
+              <input type="hidden" name="Address" value="address" />
+
+              <input type="hidden" name="Mail" value="@gmail.com" />
+              <input type="hidden" name="Phno" value="1" />
+
+              <input type="hidden" name="Item" value="item" />
+              <input type="checkbox" name="1" id="ingri1" value="1" checked />
+              <label for="ingri1">1</label>
+
+              <input type="checkbox" name="2" id="ingri2" value="2" checked />
+              <label for="ingri2">2</label>
+
+              <input type="checkbox" name="3" id="ingri3" value="3" checked />
+              <label for="ingri3">3</label>
+
+              <input type="checkbox" name="4" id="ingri4" value="4" checked />
+              <label for="ingri4">4</label>
+
+              <input type="checkbox" name="5" id="ingri5" value="5" checked />
+              <label for="ingri5">5</label>
+
+              <input type="checkbox" name="6" id="ingri6" value="6" checked />
+              <label for="ingri6">6</label>
+
+              <input type="checkbox" name="7" id="ingri7" value="7" checked />
+              <label for="ingri7">7</label>
+
+              <input type="checkbox" name="8" id="ingri8" value="8" checked />
+              <label for="ingri8">8</label>
+            </form>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <a href="/feedback/index.html" class="feedbackbtn">Feedback</a>
+      </footer>
+    </main>
+
+    <!-- <script src="/app.js"></script> -->
+    <script src="/Omnifood/js/yourplan.js"></script>
+  </body>
+</html>
